@@ -67,7 +67,7 @@ theft = cl3.sample(n=400)    # took 400 random ids to make changes to their data
 
 index_names= theft.index  # renaming their index name so that we do not have same name as theft and honest
 for q in range(400):
-    theft.rename(index={indn[q]:'theft'+str(q)}, inplace=True)
+    theft.rename(index={index_names[q]:'theft'+str(q)}, inplace=True)
 
 import random
 # divided into 4 types of theft
